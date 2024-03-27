@@ -21,5 +21,12 @@ int main() {
     //* = dereference operator (Value of operator)
     // & --> pointerVariableName = &variableName (Address of operator)
     // *pointerVariableName = variableNameValue
+    cout<<"\n";
+    //Pointer to pointer
+    int **ptr1 = &ptr;
+    cout<<"Address of pointer 1 is: "<<&ptr<<endl;
+    cout<<"Address of pointer 2 is: "<<ptr1<<endl;
+    cout<<"Value of Pointer 1 is: "<<*ptr<<endl;
+    cout<<"Value of Pointer 2 is (Using pointer 2 to 1): "<<**ptr1<<endl;
     return 0;
 }
